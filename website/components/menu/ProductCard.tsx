@@ -25,6 +25,12 @@ export function ProductCard({ item }: ProductCardProps) {
           {item.nome}
         </h3>
 
+        {item.descricao ? (
+          <p className="mt-0.5 text-left text-xs font-medium leading-snug text-junina-kraft/80 sm:text-center sm:text-sm">
+            {item.descricao}
+          </p>
+        ) : null}
+
         <p className="mt-0.5 text-base font-bold text-junina-laranja sm:mt-1 sm:text-lg">
           {formatCurrency(item.preco)}
         </p>

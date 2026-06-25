@@ -4,6 +4,8 @@ export interface MenuItem {
   nome: string;
   preco: number;
   imagem: string;
+  /** Variantes, sabores ou observação curta (ex.: "Coca, Coca Zero") */
+  descricao?: string;
 }
 
 /** Categoria com lista de produtos */

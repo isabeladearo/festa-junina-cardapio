@@ -99,7 +99,7 @@ Depois do cardápio vem a seção **Como pedir** (`EventInfo`).
 Arquivo: `website/data/menu.json`
 
 - `evento` — nome, local, subtítulo, mensagens, data, horário, passos, observação
-- `categorias[]` — id, nome, ícone emoji, itens (id, nome, preco, imagem)
+- `categorias[]` — id, nome, ícone emoji, itens (id, nome, preco, imagem, descricao opcional)
 
 Imagens em `website/public/products/<categoria>/<arquivo>.png`.
 

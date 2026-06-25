@@ -21,25 +21,27 @@
         {
             "id": "salgados",
             "nome": "Salgados",
-            "icone": "🌭",
+            "icone": "🍽️",
             "itens": [
                 {
                     "id": "pastel",
                     "nome": "Pastel",
                     "preco": 10,
+                    "descricao": "Carne ou Queijo",
                     "imagem": "/products/salgados/pastel.png"
+                },
+                {
+                    "id": "espetinho",
+                    "nome": "Espetinho",
+                    "preco": 10,
+                    "descricao": "Kafta, Carne e Frango",
+                    "imagem": "/products/salgados/espetinho.png"
                 },
                 {
                     "id": "cachorro-quente",
                     "nome": "Cachorro-Quente",
                     "preco": 10,
                     "imagem": "/products/salgados/cachorro-quente.png"
-                },
-                {
-                    "id": "espetinho",
-                    "nome": "Espetinho",
-                    "preco": 10,
-                    "imagem": "/products/salgados/espetinho.png"
                 },
                 {
                     "id": "milho-cozido",
@@ -93,19 +95,21 @@
             "itens": [
                 {
                     "id": "refrigerante",
-                    "nome": "Refrigerante (500ml)",
+                    "nome": "Refrigerante (copo 500ml)",
                     "preco": 7,
+                    "descricao": "Coca, Coca Zero",
                     "imagem": "/products/bebidas/refrigerante.png"
                 },
                 {
                     "id": "suco",
-                    "nome": "Suco (500ml)",
+                    "nome": "Suco (copo 500ml)",
                     "preco": 7,
+                    "descricao": "Laranja",
                     "imagem": "/products/bebidas/suco.png"
                 },
                 {
                     "id": "chocolate-quente",
-                    "nome": "Chocolate Quente (200ml)",
+                    "nome": "Chocolate Quente (copo 200ml)",
                     "preco": 6,
                     "imagem": "/products/bebidas/chocolate-quente.png"
                 }
@@ -123,16 +127,16 @@
                     "imagem": "/products/doces/pacoquinha.png"
                 },
                 {
-                    "id": "canjica",
-                    "nome": "Canjica",
-                    "preco": 5,
-                    "imagem": "/products/doces/canjica.png"
+                    "id": "cookies",
+                    "nome": "Cookies",
+                    "preco": 3,
+                    "imagem": "/products/doces/cookies.png"
                 },
                 {
-                    "id": "pe-de-moleque",
-                    "nome": "Pé de Moleque",
+                    "id": "empadinha-doce",
+                    "nome": "Empadinha Doce",
                     "preco": 3,
-                    "imagem": "/products/doces/pe-de-moleque.png"
+                    "imagem": "/products/doces/empadinha-doce.png"
                 },
                 {
                     "id": "cocada",
@@ -141,16 +145,16 @@
                     "imagem": "/products/doces/cocada.png"
                 },
                 {
+                    "id": "pe-de-moleque",
+                    "nome": "Pé de Moleque",
+                    "preco": 3,
+                    "imagem": "/products/doces/pe-de-moleque.png"
+                },
+                {
                     "id": "pe-de-moca",
                     "nome": "Pé de Moça",
                     "preco": 3,
                     "imagem": "/products/doces/pe-de-moca.png"
-                },
-                {
-                    "id": "doce-leite",
-                    "nome": "Doce de Leite",
-                    "preco": 3,
-                    "imagem": "/products/doces/doce-leite.png"
                 },
                 {
                     "id": "doce-abobora",
@@ -159,10 +163,34 @@
                     "imagem": "/products/doces/doce-abobora.png"
                 },
                 {
-                    "id": "cookies",
-                    "nome": "Cookies",
+                    "id": "canjica",
+                    "nome": "Canjica",
+                    "preco": 5,
+                    "imagem": "/products/doces/canjica.png"
+                },
+                {
+                    "id": "canjica-sem-lactose",
+                    "nome": "Canjica sem Lactose",
+                    "preco": 5,
+                    "imagem": "/products/doces/canjica-sem-lactose.png"
+                },
+                {
+                    "id": "doce-leite",
+                    "nome": "Doce de Leite",
                     "preco": 3,
-                    "imagem": "/products/doces/cookies.png"
+                    "imagem": "/products/doces/doce-leite.png"
+                },
+                {
+                    "id": "curau",
+                    "nome": "Curau",
+                    "preco": 3,
+                    "imagem": "/products/doces/curau.png"
+                },
+                {
+                    "id": "curau-sem-lactose",
+                    "nome": "Curau sem Lactose",
+                    "preco": 3,
+                    "imagem": "/products/doces/curau-sem-lactose.png"
                 }
             ]
         },

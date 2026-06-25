@@ -159,6 +159,7 @@ Tudo que aparece na tela do evento está em **`data/menu.json`**:
           "id": "pastel",
           "nome": "Pastel",
           "preco": 10,
+          "descricao": "Carne ou Queijo",
           "imagem": "/products/salgados/pastel.png"
         }
       ]
