@@ -1,0 +1,195 @@
+{
+    "evento": {
+        "nome": "Festa Junina",
+        "local": "na Oikos",
+        "subtitulo": "Cardápio Oficial",
+        "mensagens": [
+            "Monte seu pedido abaixo.",
+            "O pagamento é feito no caixa."
+        ],
+        "data": "27 de Junho",
+        "horario": "19h",
+        "passos": [
+            "Escolha os produtos e ajuste as quantidades com + e −",
+            "Confira tudo no carrinho antes de pagar",
+            "Na hora de pagar, toque em Mostrar ao Caixa",
+            "Depois do pagamento, toque em Pedido Finalizado"
+        ],
+        "observacao": "Não precisa de cadastro. Pagamento apenas no caixa, pelo celular."
+    },
+    "categorias": [
+        {
+            "id": "salgados",
+            "nome": "Salgados",
+            "icone": "🌭",
+            "itens": [
+                {
+                    "id": "pastel",
+                    "nome": "Pastel",
+                    "preco": 10,
+                    "imagem": "/products/salgados/pastel.png"
+                },
+                {
+                    "id": "cachorro-quente",
+                    "nome": "Cachorro-Quente",
+                    "preco": 10,
+                    "imagem": "/products/salgados/cachorro-quente.png"
+                },
+                {
+                    "id": "espetinho",
+                    "nome": "Espetinho",
+                    "preco": 10,
+                    "imagem": "/products/salgados/espetinho.png"
+                },
+                {
+                    "id": "milho-cozido",
+                    "nome": "Milho Cozido",
+                    "preco": 8,
+                    "imagem": "/products/salgados/milho-cozido.png"
+                },
+                {
+                    "id": "caldo-mandioca",
+                    "nome": "Caldo de Mandioca",
+                    "preco": 10,
+                    "imagem": "/products/salgados/caldo-mandioca.png"
+                },
+                {
+                    "id": "pamonha-natural",
+                    "nome": "Pamonha Natural",
+                    "preco": 15,
+                    "imagem": "/products/salgados/pamonha-natural.png"
+                },
+                {
+                    "id": "pamonha-queijo",
+                    "nome": "Pamonha com Queijo",
+                    "preco": 17,
+                    "imagem": "/products/salgados/pamonha-queijo.png"
+                }
+            ]
+        },
+        {
+            "id": "lanches",
+            "nome": "Lanches",
+            "icone": "🍿",
+            "itens": [
+                {
+                    "id": "pipoca",
+                    "nome": "Pipoca",
+                    "preco": 2,
+                    "imagem": "/products/lanches/pipoca.png"
+                },
+                {
+                    "id": "pipoca-doce",
+                    "nome": "Pipoca Doce",
+                    "preco": 5,
+                    "imagem": "/products/lanches/pipoca-doce.png"
+                }
+            ]
+        },
+        {
+            "id": "bebidas",
+            "nome": "Bebidas",
+            "icone": "🥤",
+            "itens": [
+                {
+                    "id": "refrigerante",
+                    "nome": "Refrigerante (500ml)",
+                    "preco": 7,
+                    "imagem": "/products/bebidas/refrigerante.png"
+                },
+                {
+                    "id": "suco",
+                    "nome": "Suco (500ml)",
+                    "preco": 7,
+                    "imagem": "/products/bebidas/suco.png"
+                },
+                {
+                    "id": "chocolate-quente",
+                    "nome": "Chocolate Quente (200ml)",
+                    "preco": 6,
+                    "imagem": "/products/bebidas/chocolate-quente.png"
+                }
+            ]
+        },
+        {
+            "id": "doces",
+            "nome": "Doces Típicos",
+            "icone": "🍰",
+            "itens": [
+                {
+                    "id": "pacoquinha",
+                    "nome": "Paçoquinha",
+                    "preco": 2,
+                    "imagem": "/products/doces/pacoquinha.png"
+                },
+                {
+                    "id": "canjica",
+                    "nome": "Canjica",
+                    "preco": 5,
+                    "imagem": "/products/doces/canjica.png"
+                },
+                {
+                    "id": "pe-de-moleque",
+                    "nome": "Pé de Moleque",
+                    "preco": 3,
+                    "imagem": "/products/doces/pe-de-moleque.png"
+                },
+                {
+                    "id": "cocada",
+                    "nome": "Cocada",
+                    "preco": 3,
+                    "imagem": "/products/doces/cocada.png"
+                },
+                {
+                    "id": "pe-de-moca",
+                    "nome": "Pé de Moça",
+                    "preco": 3,
+                    "imagem": "/products/doces/pe-de-moca.png"
+                },
+                {
+                    "id": "doce-leite",
+                    "nome": "Doce de Leite",
+                    "preco": 3,
+                    "imagem": "/products/doces/doce-leite.png"
+                },
+                {
+                    "id": "doce-abobora",
+                    "nome": "Doce de Abóbora",
+                    "preco": 2,
+                    "imagem": "/products/doces/doce-abobora.png"
+                },
+                {
+                    "id": "cookies",
+                    "nome": "Cookies",
+                    "preco": 3,
+                    "imagem": "/products/doces/cookies.png"
+                }
+            ]
+        },
+        {
+            "id": "bolos",
+            "nome": "Bolos",
+            "icone": "🎂",
+            "itens": [
+                {
+                    "id": "bolo-milho",
+                    "nome": "Bolo de Milho (fatia)",
+                    "preco": 4,
+                    "imagem": "/products/bolos/bolo-milho.png"
+                },
+                {
+                    "id": "bolo-fuba-cremoso",
+                    "nome": "Bolo de Fubá Cremoso (fatia)",
+                    "preco": 4,
+                    "imagem": "/products/bolos/bolo-fuba-cremoso.png"
+                },
+                {
+                    "id": "bolo-fuba-goiabada",
+                    "nome": "Bolo de Fubá com Goiabada (fatia)",
+                    "preco": 4,
+                    "imagem": "/products/bolos/bolo-fuba-goiabada.png"
+                }
+            ]
+        }
+    ]
+}
