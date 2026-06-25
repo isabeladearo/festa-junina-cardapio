@@ -21,9 +21,9 @@ interface CategoryNavProps {
 
 export function CategoryNav({ categories, onSelect }: CategoryNavProps) {
   return (
-    <nav className="category-nav" aria-label="Atalhos para categorias do cardápio">
+    <nav className="category-nav" aria-label="Categorias do cardápio">
       <p className="category-nav-hint">
-        Toque para ir à categoria. Role a tela para ver o cardápio completo.
+        Toque na categoria ou role a tela.
       </p>
       <div className="category-nav-track">
         {categories.map((category) => (

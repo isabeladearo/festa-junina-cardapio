@@ -181,7 +181,7 @@ Tudo que aparece na tela do evento está em **`data/menu.json`**:
 | **Tema** | Festa junina artesanal — scrapbook, papel kraft, quermesse |
 | **Fontes** | Bree Serif (títulos) + Nunito (texto) |
 | **Cores** | Laranja `#D96A1D`, vermelho `#B03A2E`, amarelo `#F5C242`, verde `#4E8C4A`, creme `#F7E7C6`, kraft `#8B5E3C` |
-| **Fundo** | Tecido xadrez (`public/backgrounds/junina-background.jpg`) |
+| **Fundo** | Tecido xadrez (`public/backgrounds/junina-background.png`) |
 | **Produtos** | Stickers PNG com fundo transparente |
 
 Tokens e classes visuais em `app/globals.css`.

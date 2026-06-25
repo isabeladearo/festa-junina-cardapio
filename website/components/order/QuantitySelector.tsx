@@ -22,7 +22,7 @@ export function QuantitySelector({
       className={
         isPanel
           ? "order-qty-selector"
-          : "mt-1.5 flex items-center gap-2.5 sm:mt-3 sm:gap-3"
+          : "qty-selector-card flex shrink-0 items-center"
       }
       aria-label={`Quantidade de ${productName}`}
     >
@@ -31,12 +31,14 @@ export function QuantitySelector({
         onClick={() => removeItem(productId)}
         disabled={quantity === 0}
         aria-label={`Diminuir quantidade de ${productName}`}
-        className={`qty-btn qty-btn-minus disabled:opacity-50${isPanel ? " qty-btn-panel" : ""}`}
+        className={`qty-btn qty-btn-minus disabled:opacity-50${isPanel ? " qty-btn-panel" : " qty-btn-card"}`}
       >
         −
       </button>
       <span
-        className={isPanel ? "qty-counter qty-counter-panel" : "qty-counter"}
+        className={
+          isPanel ? "qty-counter qty-counter-panel" : "qty-counter qty-counter-card"
+        }
         aria-live="polite"
         aria-label="Quantidade"
       >
@@ -46,7 +48,7 @@ export function QuantitySelector({
         type="button"
         onClick={() => addItem(productId)}
         aria-label={`Aumentar quantidade de ${productName}`}
-        className={`qty-btn qty-btn-plus${isPanel ? " qty-btn-panel" : ""}`}
+        className={`qty-btn qty-btn-plus${isPanel ? " qty-btn-panel" : " qty-btn-card"}`}
       >
         +
       </button>

@@ -60,7 +60,7 @@ export function MenuCatalog({ categories }: MenuCatalogProps) {
   }, []);
 
   return (
-    <div className="flex w-full flex-col gap-8 sm:gap-10">
+    <div className="flex w-full flex-col gap-5 sm:gap-6">
       <div className="category-nav-sticky">
         <CategoryNav categories={categories} onSelect={scrollToCategory} />
       </div>

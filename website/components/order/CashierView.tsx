@@ -18,7 +18,7 @@ function CashierLine({
 }) {
   return (
     <div className="cashier-line-item">
-      <div className="cashier-line grid grid-cols-[minmax(0,1fr)_auto] items-start gap-x-3 gap-y-1 text-xl leading-snug sm:text-2xl">
+      <div className="cashier-line grid grid-cols-[minmax(0,1fr)_auto] items-start gap-x-2 gap-y-0.5 text-base leading-snug sm:text-lg">
         <p className="min-w-0 break-words font-semibold text-junina-kraft">
           <span className="cashier-line-qty">{quantity}x</span> {name}
         </p>
@@ -91,22 +91,22 @@ export function CashierView() {
       >
         <div className="cashier-view-body flex flex-1 items-center justify-center p-6">
           <article className="cashier-done-card mx-auto w-full max-w-md text-center">
-            <p className="text-5xl" aria-hidden>
+            <p className="text-4xl" aria-hidden>
               ✅
             </p>
             <h1
               id="cashier-done-title"
-              className="mt-4 font-heading text-3xl text-junina-laranja sm:text-4xl"
+              className="mt-3 font-heading text-2xl text-junina-laranja sm:text-3xl"
             >
               Pedido concluído!
             </h1>
-            <p className="mt-3 text-lg leading-relaxed text-junina-kraft sm:text-xl">
+            <p className="mt-2 text-base leading-relaxed text-junina-kraft sm:text-lg">
               Pagamento feito. Bom proveito na festa!
             </p>
             <button
               type="button"
               onClick={closePanel}
-              className="order-btn order-btn-primary cashier-done-btn mt-8 w-full"
+              className="order-btn order-btn-primary cashier-done-btn mt-6 w-full"
             >
               Fazer novo pedido
             </button>
@@ -123,7 +123,7 @@ export function CashierView() {
       aria-labelledby="cashier-view-title"
       className="cashier-view fixed inset-0 z-[80] flex min-h-dvh flex-col"
     >
-      <div className="cashier-view-header flex shrink-0 py-3 sm:py-4">
+      <div className="cashier-view-header flex shrink-0 py-2 sm:py-3">
         <SiteContainer className="flex w-full items-center justify-between gap-3">
           <button
             type="button"
@@ -143,16 +143,16 @@ export function CashierView() {
       </div>
 
       <div className="cashier-view-body min-h-0 flex-1 overflow-y-auto overscroll-contain pb-4">
-        <SiteContainer className="py-6 sm:py-8">
+        <SiteContainer className="py-4 sm:py-5">
           <article className="cashier-receipt mx-auto w-full min-w-0 max-w-lg overflow-x-hidden">
             <h1
               id="cashier-view-title"
-              className="text-center font-heading text-4xl font-normal uppercase tracking-wide text-junina-kraft sm:text-5xl"
+              className="text-center font-heading text-3xl font-normal uppercase tracking-wide text-junina-kraft sm:text-4xl"
             >
               Pedido
             </h1>
 
-            <div className="cashier-receipt-items mt-8 space-y-8 sm:space-y-10">
+            <div className="cashier-receipt-items mt-5 space-y-5 sm:space-y-6">
               {summary.categories.map((category) => {
                 const categoryMeta = menu.categorias.find(
                   (entry) => entry.id === category.categoryId,
@@ -167,14 +167,14 @@ export function CashierView() {
                     key={category.categoryId}
                     className="cashier-category-block"
                   >
-                    <h2 className="font-heading text-2xl text-junina-laranja sm:text-3xl">
+                    <h2 className="font-heading text-xl text-junina-laranja sm:text-2xl">
                       {categoryMeta?.icone} {category.categoryName}
                     </h2>
                     <p className="cashier-category-meta">
                       {categoryItemCount}{" "}
                       {categoryItemCount === 1 ? "unidade" : "unidades"}
                     </p>
-                    <ul className="mt-4 space-y-4">
+                    <ul className="mt-2.5 space-y-2.5">
                       {category.items.map((line) => (
                         <li key={line.item.id}>
                           <CashierLine
@@ -186,16 +186,12 @@ export function CashierView() {
                         </li>
                       ))}
                     </ul>
-                    <p className="cashier-category-subtotal">
-                      Subtotal {category.categoryName}:{" "}
-                      {formatCurrency(category.subtotal)}
-                    </p>
                   </section>
                 );
               })}
             </div>
 
-            <div className="cashier-receipt-totals mt-10">
+            <div className="cashier-receipt-totals mt-6">
               <div className="cashier-receipt-count">
                 <p className="cashier-receipt-count-label">Total de itens</p>
                 <p className="cashier-receipt-count-value">
@@ -206,7 +202,7 @@ export function CashierView() {
                 <p className="text-base font-bold uppercase tracking-[0.2em] text-junina-kraft sm:text-lg">
                   Total a pagar
                 </p>
-                <p className="mt-3 font-heading text-6xl font-normal leading-none text-junina-laranja sm:text-7xl">
+                <p className="mt-2 font-heading text-5xl font-normal leading-none text-junina-laranja sm:text-6xl">
                   {formatCurrency(summary.totalPrice)}
                 </p>
               </div>
@@ -215,8 +211,8 @@ export function CashierView() {
         </SiteContainer>
       </div>
 
-      <div className="cashier-view-footer shrink-0 py-4">
-        <SiteContainer className="flex flex-col gap-3">
+      <div className="cashier-view-footer shrink-0 py-3">
+        <SiteContainer className="flex flex-col gap-2">
           {confirmFinish ? (
             <div className="cashier-finish-confirm">
               <p className="cashier-finish-confirm-text">

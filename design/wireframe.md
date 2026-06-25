@@ -24,14 +24,13 @@ Ordem das categorias: **Salgados → Lanches → Bebidas → Doces → Bolos**.
 
 ## Cabeçalho
 
-**Elementos decorativos:** bandeirinhas, balão, casal caipira, fogueira (`public/stickers/`).
+**Elementos decorativos:** bandeirinhas no topo (`public/stickers/`).
 
 **Conteúdo (de `menu.json` → `evento`):**
 
-- Título em duas linhas: `nome` + `local` (ex.: "Festa Junina" / "na Oikos")
-- `subtitulo` (ex.: "Cardápio Oficial")
-- `mensagens[]` — duas frases curtas
-- `data` e `horario`
+- Título em uma linha: `nome` + `local` (ex.: "Festa Junina na Oikos")
+- `subtitulo`, data e horário na sequência
+- `mensagens[]` — duas frases curtas, sem caixa extra
 
 ---
 
@@ -41,24 +40,22 @@ Barra sticky com 5 atalhos (ícone + rótulo).
 
 - Toque leva à seção da categoria (scroll suave)
 - Sem indicador de "categoria ativa" ao rolar
-- Dica: "Toque para ir à categoria. Role a tela para ver o cardápio completo."
+- Dica: "Toque na categoria ou role a tela." (10px, uma linha)
 
 ---
 
 ## Cards de produto
 
-Por item:
+Por item (lista só texto):
 
-- Imagem (sticker PNG)
-- Nome
-- Preço
-- Seletor: **[−] quantidade [+]**
+- Nome e preço na mesma linha
+- Descrição opcional (variantes, sabores)
+- Seletor **[−] quantidade [+]** à direita
 
 Layout responsivo:
 
-- Celular: 1 card por linha (imagem à esquerda)
-- Tablet: 2 por linha
-- Desktop: 4 por linha
+- Celular: 1 linha por item
+- Desktop: 2 colunas de linhas
 
 Quantidade nunca fica negativa.
 
@@ -91,7 +88,6 @@ Abre por cima do cardápio (slide de baixo).
 - Itens agrupados por categoria
 - Cada linha: quantidade × nome, subtotal da linha
 - Edição: +/− e botão **Remover**
-- Subtotal por categoria
 - Total de itens e total do pedido
 
 **Rodapé:**
@@ -115,7 +111,6 @@ Tela cheia para o caixa ler no celular do cliente.
 - Título: **PEDIDO**
 - Por categoria: ícone, nome, contagem de unidades
 - Linhas com quantidade, nome, preço unitário ("R$ X cada") e subtotal da linha
-- Subtotal da categoria
 - Total de itens e **Total a pagar** em destaque
 
 **Rodapé:**

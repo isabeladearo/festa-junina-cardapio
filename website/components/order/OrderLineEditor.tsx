@@ -21,7 +21,7 @@ export function OrderLineEditor({
 
   return (
     <div className="order-line-item">
-      <div className="order-line grid grid-cols-[minmax(0,1fr)_auto] items-start gap-x-3 gap-y-1 text-lg leading-snug sm:text-xl">
+      <div className="order-line grid grid-cols-[minmax(0,1fr)_auto] items-start gap-x-2 gap-y-0.5 text-sm leading-snug sm:text-base">
         <p className="min-w-0 break-words font-semibold text-junina-kraft">
           {quantity}x {productName}
         </p>

@@ -40,7 +40,7 @@ Não deve parecer: app bancário, marketplace, iFood ou sistema corporativo.
 
 ## Fundo da página
 
-Imagem: `/backgrounds/junina-background.jpg` (xadrez junino), com `background-attachment: fixed`.
+Imagem: `/backgrounds/junina-background.png` (xadrez junino), rola com a página (sem `fixed`, evita blur no celular).
 
 ---
 
@@ -94,23 +94,22 @@ Gradiente laranja, texto branco, seta em círculo amarelo.
 
 ## Layout
 
-### `.site-container`
-
-Largura máxima compartilhada (header, main, carrinho, painéis): `max-width: 72rem`, padding responsivo.
-
 ### Grid de produtos
 
-- Mobile: 1 coluna
-- `md`: 2 colunas
-- `lg`: 4 colunas
+Lista compacta estilo delivery:
+
+- **Mobile:** 1 coluna — nome, preço, descrição e +/− na mesma linha
+- **Desktop:** 2 colunas de linhas compactas
+
+Os itens do cardápio são **só texto** (sem miniatura por produto). Stickers e fundo cuidam da identidade visual; imagens em `public/products/` ficam no projeto para outros usos.
+
+A tela **Mostrar ao Caixa** mantém fontes maiores no total a pagar para leitura pelo atendente.
 
 ---
 
 ## Imagens de produto
 
-- Formato PNG, fundo transparente
-- Estilo sticker / papel recortado
-- Caminhos em `menu.json` → `website/public/products/`
+Arquivos em `menu.json` → `website/public/products/` (PNG sticker). **Não aparecem na lista do cardápio** — só texto na tela; imagens ficam no repositório para outros usos.
 
 ---
 

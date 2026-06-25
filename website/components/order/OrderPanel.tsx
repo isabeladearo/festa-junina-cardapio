@@ -43,25 +43,25 @@ export function OrderPanel() {
         role="dialog"
         aria-modal="true"
         aria-labelledby="order-panel-title"
-        className="order-panel fixed inset-x-0 bottom-0 z-[70] flex min-h-[70vh] max-h-[85vh] flex-col rounded-t-2xl shadow-[0_-12px_32px_rgb(0_0_0_/_0.28)]"
+        className="order-panel fixed inset-x-0 bottom-0 z-[70] flex min-h-[60vh] max-h-[88vh] flex-col rounded-t-xl shadow-[0_-12px_32px_rgb(0_0_0_/_0.28)]"
       >
-        <div className="order-panel-header flex shrink-0 flex-col gap-3 py-4">
-          <SiteContainer className="flex w-full items-start justify-between gap-3">
+        <div className="order-panel-header flex shrink-0 flex-col gap-2 py-3">
+          <SiteContainer className="flex w-full items-start justify-between gap-2">
             <div className="min-w-0 text-left">
               <h2
                 id="order-panel-title"
-                className="font-heading text-3xl text-junina-laranja sm:text-4xl"
+                className="font-heading text-2xl text-junina-laranja sm:text-3xl"
               >
                 Conferir pedido
               </h2>
-              <p className="mt-1 text-base font-semibold text-junina-kraft sm:text-lg">
+              <p className="mt-0.5 text-sm font-semibold text-junina-kraft sm:text-base">
                 Ajuste o que precisar antes de pagar
               </p>
             </div>
             <button
               type="button"
               onClick={closePanel}
-              className="panel-close-btn flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-junina-kraft/15 text-3xl leading-none text-junina-kraft transition-colors hover:bg-junina-kraft/25"
+              className="panel-close-btn flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-junina-kraft/15 text-2xl leading-none text-junina-kraft transition-colors hover:bg-junina-kraft/25"
               aria-label="Fechar e voltar ao cardápio"
             >
               ×
@@ -69,20 +69,20 @@ export function OrderPanel() {
           </SiteContainer>
         </div>
 
-        <div className="order-panel-body min-h-0 flex-1 overflow-y-auto overscroll-contain py-5 sm:py-6">
+        <div className="order-panel-body min-h-0 flex-1 overflow-y-auto overscroll-contain py-3 sm:py-4">
           <SiteContainer>
             <OrderSummary />
           </SiteContainer>
         </div>
 
-        <div className="order-panel-footer flex shrink-0 flex-col gap-3 py-5">
-          <SiteContainer className="flex flex-col gap-3">
+        <div className="order-panel-footer flex shrink-0 flex-col gap-2 py-3 sm:py-4">
+          <SiteContainer className="flex flex-col gap-2">
             <p className="order-panel-footer-hint text-center text-sm font-semibold text-junina-kraft sm:text-base">
               {summary.isEmpty
                 ? "Volte ao cardápio para escolher os produtos."
                 : "Pronto para pagar? Toque em Mostrar ao Caixa."}
             </p>
-            <div className="flex flex-col gap-3 sm:flex-row">
+            <div className="flex flex-col gap-2 sm:flex-row">
               {!summary.isEmpty ? (
                 <button
                   type="button"

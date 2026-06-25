@@ -16,8 +16,8 @@ export default function Home() {
       <div className="flex min-h-full flex-1 flex-col">
         <Header evento={menu.evento} />
 
-        <main className="flex-1 pb-28 sm:pb-32">
-          <SiteContainer className="flex flex-col gap-6 sm:gap-10">
+        <main className="flex-1 pb-20 sm:pb-24">
+          <SiteContainer className="flex flex-col gap-4 sm:gap-6">
             <MenuCatalog categories={menu.categorias} />
             <EventInfo evento={menu.evento} />
           </SiteContainer>

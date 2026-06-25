@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { QuantitySelector } from "@/components/order/QuantitySelector";
 import { formatCurrency } from "@/lib/currency";
 import type { MenuItem } from "@/types/menu";
@@ -9,34 +8,25 @@ interface ProductCardProps {
 
 export function ProductCard({ item }: ProductCardProps) {
   return (
-    <li className="paper-card flex flex-row items-center gap-3 px-3 py-2.5 sm:flex-col sm:items-center sm:gap-0 sm:px-4 sm:py-4">
-      <div className="relative h-[7.25rem] w-[7.25rem] shrink-0 sm:mb-2 sm:h-32 sm:w-32">
-        <Image
-          src={item.imagem}
-          alt={item.nome}
-          fill
-          sizes="(max-width: 640px) 116px, 128px"
-          className="object-contain drop-shadow-sm"
-        />
-      </div>
-
-      <div className="flex min-w-0 flex-1 flex-col items-start sm:items-center">
-        <h3 className="text-left text-[0.95rem] font-semibold leading-tight text-junina-kraft sm:text-center sm:text-lg sm:leading-snug">
-          {item.nome}
-        </h3>
+    <li className="paper-card product-card flex items-center gap-3 px-3 py-2.5 sm:px-3.5 sm:py-3">
+      <div className="flex min-w-0 flex-1 flex-col justify-center gap-0.5">
+        <div className="flex items-baseline justify-between gap-3">
+          <h3 className="min-w-0 text-base font-semibold leading-snug text-junina-kraft">
+            {item.nome}
+          </h3>
+          <p className="shrink-0 text-base font-bold tabular-nums text-junina-laranja">
+            {formatCurrency(item.preco)}
+          </p>
+        </div>
 
         {item.descricao ? (
-          <p className="mt-0.5 text-left text-xs font-medium leading-snug text-junina-kraft/80 sm:text-center sm:text-sm">
+          <p className="text-sm leading-snug text-junina-kraft/80">
             {item.descricao}
           </p>
         ) : null}
-
-        <p className="mt-0.5 text-base font-bold text-junina-laranja sm:mt-1 sm:text-lg">
-          {formatCurrency(item.preco)}
-        </p>
-
-        <QuantitySelector productId={item.id} productName={item.nome} />
       </div>
+
+      <QuantitySelector productId={item.id} productName={item.nome} />
     </li>
   );
 }

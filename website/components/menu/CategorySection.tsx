@@ -12,13 +12,13 @@ export function CategorySection({ category }: CategorySectionProps) {
       className="w-full"
       aria-labelledby={`category-${category.id}`}
     >
-      <div className="category-plaque mb-5">
-        <span className="text-2xl" aria-hidden>
+      <div className="category-plaque mb-3 sm:mb-3.5">
+        <span className="text-lg sm:text-xl" aria-hidden>
           {category.icone}
         </span>
         <h2
           id={`category-${category.id}`}
-          className="font-heading text-xl uppercase tracking-wider sm:text-2xl"
+          className="font-heading text-base uppercase tracking-wider sm:text-lg"
         >
           {category.nome}
         </h2>
