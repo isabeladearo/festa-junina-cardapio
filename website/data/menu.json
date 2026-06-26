@@ -26,45 +26,38 @@
                     "id": "pastel",
                     "nome": "Pastel",
                     "preco": 10,
-                    "descricao": "Carne ou Queijo",
-                    "imagem": "/products/salgados/pastel.png"
+                    "descricao": "Carne ou Queijo"
                 },
                 {
                     "id": "espetinho",
                     "nome": "Espetinho",
                     "preco": 10,
-                    "descricao": "Kafta, Carne e Frango",
-                    "imagem": "/products/salgados/espetinho.png"
+                    "descricao": "Kafta, Carne e Frango"
                 },
                 {
                     "id": "cachorro-quente",
                     "nome": "Cachorro-Quente",
-                    "preco": 10,
-                    "imagem": "/products/salgados/cachorro-quente.png"
+                    "preco": 10
                 },
                 {
                     "id": "milho-cozido",
                     "nome": "Milho Cozido",
-                    "preco": 8,
-                    "imagem": "/products/salgados/milho-cozido.png"
+                    "preco": 8
                 },
                 {
                     "id": "caldo-mandioca",
                     "nome": "Caldo de Mandioca",
-                    "preco": 10,
-                    "imagem": "/products/salgados/caldo-mandioca.png"
+                    "preco": 10
                 },
                 {
                     "id": "pamonha-natural",
                     "nome": "Pamonha Natural",
-                    "preco": 15,
-                    "imagem": "/products/salgados/pamonha-natural.png"
+                    "preco": 15
                 },
                 {
                     "id": "pamonha-queijo",
                     "nome": "Pamonha com Queijo",
-                    "preco": 17,
-                    "imagem": "/products/salgados/pamonha-queijo.png"
+                    "preco": 17
                 }
             ]
         },
@@ -76,14 +69,12 @@
                 {
                     "id": "pipoca",
                     "nome": "Pipoca",
-                    "preco": 2,
-                    "imagem": "/products/lanches/pipoca.png"
+                    "preco": 2
                 },
                 {
                     "id": "pipoca-doce",
                     "nome": "Pipoca Doce",
-                    "preco": 5,
-                    "imagem": "/products/lanches/pipoca-doce.png"
+                    "preco": 5
                 }
             ]
         },
@@ -96,27 +87,23 @@
                     "id": "refrigerante",
                     "nome": "Refrigerante (copo 500ml)",
                     "preco": 7,
-                    "descricao": "Coca, Coca Zero",
-                    "imagem": "/products/bebidas/refrigerante.png"
+                    "descricao": "Coca, Coca Zero"
                 },
                 {
                     "id": "suco",
                     "nome": "Suco (copo 500ml)",
                     "preco": 7,
-                    "descricao": "Laranja",
-                    "imagem": "/products/bebidas/suco.png"
+                    "descricao": "Laranja"
                 },
                 {
                     "id": "agua-com-gas",
                     "nome": "Água com Gás (500ml)",
-                    "preco": 5,
-                    "imagem": "/products/bebidas/agua-com-gas.png"
+                    "preco": 5
                 },
                 {
                     "id": "chocolate-quente",
                     "nome": "Chocolate Quente (copo 200ml)",
-                    "preco": 6,
-                    "imagem": "/products/bebidas/chocolate-quente.png"
+                    "preco": 6
                 }
             ]
         },
@@ -128,74 +115,62 @@
                 {
                     "id": "pacoquinha",
                     "nome": "Paçoquinha",
-                    "preco": 2,
-                    "imagem": "/products/doces/pacoquinha.png"
+                    "preco": 2
                 },
                 {
                     "id": "cookies",
                     "nome": "Cookies",
-                    "preco": 3,
-                    "imagem": "/products/doces/cookies.png"
+                    "preco": 3
                 },
                 {
                     "id": "empadinha-doce",
                     "nome": "Empadinha Doce",
-                    "preco": 3,
-                    "imagem": "/products/doces/empadinha-doce.png"
+                    "preco": 3
                 },
                 {
                     "id": "cocada",
                     "nome": "Cocada",
-                    "preco": 3,
-                    "imagem": "/products/doces/cocada.png"
+                    "preco": 3
                 },
                 {
                     "id": "pe-de-moleque",
                     "nome": "Pé de Moleque",
-                    "preco": 3,
-                    "imagem": "/products/doces/pe-de-moleque.png"
+                    "preco": 3
                 },
                 {
                     "id": "pe-de-moca",
                     "nome": "Pé de Moça",
-                    "preco": 3,
-                    "imagem": "/products/doces/pe-de-moca.png"
+                    "preco": 3
                 },
                 {
                     "id": "doce-abobora",
                     "nome": "Doce de Abóbora",
-                    "preco": 2,
-                    "imagem": "/products/doces/doce-abobora.png"
+                    "preco": 2
                 },
                 {
                     "id": "canjica",
                     "nome": "Canjica",
-                    "preco": 5,
-                    "imagem": "/products/doces/canjica.png"
+                    "preco": 5
                 },
                 {
                     "id": "canjica-sem-lactose",
                     "nome": "Canjica sem Lactose",
-                    "preco": 5,
-                    "imagem": "/products/doces/canjica-sem-lactose.png"
+                    "preco": 5
                 },
                 {
                     "id": "doce-leite",
                     "nome": "Doce de Leite",
-                    "preco": 3,
-                    "imagem": "/products/doces/doce-leite.png"
+                    "preco": 3
                 },
                 {
                     "id": "curau",
                     "nome": "Curau",
-                    "preco": 3,
-                    "imagem": "/products/doces/curau.png"
+                    "preco": 3
                 },
                 {
                     "id": "curau-sem-lactose",
                     "nome": "Curau sem Lactose",
-                    "preco": 3,
-                    "imagem": "/products/doces/curau-sem-lactose.png"
+                    "preco": 3
                 }
             ]
         },
@@ -207,20 +182,17 @@
                 {
                     "id": "bolo-milho",
                     "nome": "Bolo de Milho (fatia)",
-                    "preco": 4,
-                    "imagem": "/products/bolos/bolo-milho.png"
+                    "preco": 4
                 },
                 {
                     "id": "bolo-fuba-cremoso",
                     "nome": "Bolo de Fubá Cremoso (fatia)",
-                    "preco": 4,
-                    "imagem": "/products/bolos/bolo-fuba-cremoso.png"
+                    "preco": 4
                 },
                 {
                     "id": "bolo-fuba-goiabada",
                     "nome": "Bolo de Fubá com Goiabada (fatia)",
-                    "preco": 4,
-                    "imagem": "/products/bolos/bolo-fuba-goiabada.png"
+                    "preco": 4
                 }
             ]
         }

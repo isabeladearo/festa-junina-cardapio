@@ -1,4 +1,4 @@
-# Design System — Cardápio Festa Junina na Oikos
+# Design System — Cardápio Festa Junina da Oikos
 
 Identidade visual e tokens usados na aplicação (`website/app/globals.css`).
 
@@ -36,6 +36,8 @@ Não deve parecer: app bancário, marketplace, iFood ou sistema corporativo.
 - `--junina-dash-kraft` / `--junina-dash-kraft-soft`
 - `--junina-dash-light` / `--junina-dash-light-strong`
 
+Usar com moderação no painel do pedido — evitar caixa pontilhada dentro de caixa pontilhada.
+
 ---
 
 ## Fundo da página
@@ -57,6 +59,10 @@ Classe utilitária: `.font-heading`
 
 ## Componentes visuais
 
+### Cabeçalho (`.header-bunting`)
+
+Faixa de bandeirinhas em CSS (laranja, amarelo, verde, vermelho) no topo do cartão do título.
+
 ### `.paper-card`
 
 Cartão estilo papel kraft — header, produtos, seção "Como pedir".
@@ -67,12 +73,12 @@ Placa de madeira para o título de cada categoria (texto branco, sombra).
 
 ### `.category-nav`
 
-Barra de atalhos com borda tracejada e fundo papel claro.
+Barra sticky com 5 atalhos compactos (grade no celular), borda tracejada e fundo papel claro. Fundo opaco ao rolar (`category-nav-sticky`).
 
 ### Botões de quantidade (`.qty-btn`)
 
 - **+** verde, **−** vermelho
-- Redondos, grandes, borda tracejada clara
+- Redondos, borda tracejada clara
 
 ### Carrinho flutuante (`.floating-cart-btn`)
 
@@ -82,7 +88,8 @@ Gradiente laranja, texto branco, seta em círculo amarelo.
 
 - Fundo creme (`order-panel`, `order-panel-body`)
 - Slide de baixo (`order-panel-slide-up`)
-- Linhas editáveis com borda tracejada
+- Tracejado nas seções principais (painel, categorias, totais, botões de ação)
+- Itens individuais sem borda extra — fundo claro apenas
 
 ### Tela do caixa
 
@@ -94,22 +101,16 @@ Gradiente laranja, texto branco, seta em círculo amarelo.
 
 ## Layout
 
-### Grid de produtos
+### Lista de produtos
 
-Lista compacta estilo delivery:
+Estilo delivery compacto, **só texto**:
 
 - **Mobile:** 1 coluna — nome, preço, descrição e +/− na mesma linha
 - **Desktop:** 2 colunas de linhas compactas
 
-Os itens do cardápio são **só texto** (sem miniatura por produto). Stickers e fundo cuidam da identidade visual; imagens em `public/products/` ficam no projeto para outros usos.
+Sem imagens de produto na interface.
 
 A tela **Mostrar ao Caixa** mantém fontes maiores no total a pagar para leitura pelo atendente.
-
----
-
-## Imagens de produto
-
-Arquivos em `menu.json` → `website/public/products/` (PNG sticker). **Não aparecem na lista do cardápio** — só texto na tela; imagens ficam no repositório para outros usos.
 
 ---
 
@@ -125,4 +126,4 @@ Leves e rápidas:
 
 ## Responsividade
 
-Prioridade: celular na festa. Desktop e tablet seguem o mesmo fluxo com mais colunas no grid.
+Prioridade: celular na festa. Desktop e tablet seguem o mesmo fluxo com mais colunas no grid de produtos.

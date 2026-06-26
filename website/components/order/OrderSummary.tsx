@@ -9,7 +9,7 @@ export function OrderSummary() {
 
   if (summary.isEmpty) {
     return (
-      <div className="order-summary-empty py-5 text-center">
+      <div className="py-5 text-center">
         <p className="text-base font-semibold text-junina-kraft sm:text-lg">
           Seu pedido está vazio.
         </p>

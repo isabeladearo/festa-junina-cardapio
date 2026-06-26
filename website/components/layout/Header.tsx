@@ -8,10 +8,6 @@ interface HeaderProps {
 }
 
 export function Header({ evento }: HeaderProps) {
-  const tituloCompleto = evento.local
-    ? `${evento.nome} ${evento.local}`
-    : evento.nome;
-
   return (
     <header className="w-full pb-2 pt-2 text-center sm:pt-3">
       <SiteContainer>
@@ -23,7 +19,7 @@ export function Header({ evento }: HeaderProps) {
           </div>
 
           <h1 className="header-title">
-            <span className="header-title-main">{tituloCompleto}</span>
+            <span className="header-title-main">{evento.nome}</span>
           </h1>
 
           <p className="header-subtitle">{evento.subtitulo}</p>

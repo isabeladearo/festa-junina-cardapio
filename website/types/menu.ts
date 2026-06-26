@@ -3,7 +3,6 @@ export interface MenuItem {
   id: string;
   nome: string;
   preco: number;
-  imagem: string;
   /** Variantes, sabores ou observação curta (ex.: "Coca, Coca Zero") */
   descricao?: string;
 }
@@ -19,7 +18,6 @@ export interface Category {
 /** Metadados do evento (menu.json → evento) */
 export interface EventInfo {
   nome: string;
-  local?: string;
   subtitulo: string;
   mensagens: string[];
   data: string;

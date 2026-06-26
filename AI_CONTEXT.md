@@ -6,11 +6,13 @@
 - **Design e wireframe:** pasta `design/`
 - **Índice:** `docs/project-context.md`
 
+**Regra:** ao alterar comportamento, dados ou assets do app, atualize também estes arquivos de documentação.
+
 ---
 
 ## Projeto
 
-**Cardápio Digital — Festa Junina na Oikos**
+**Cardápio Digital — Festa Junina da Oikos**
 
 Página web estática para o visitante:
 
@@ -60,11 +62,12 @@ festa-junina-cardapio/
     ├── data/              menu.json
     ├── hooks/             useOrder
     ├── lib/               menu, order, order-storage, currency, site
-    ├── public/            products/, stickers/, backgrounds/
+    ├── public/
+    │   └── backgrounds/   fundo xadrez (junina-background.png)
     └── types/             menu.ts
 ```
 
-Pastas mencionadas em versões antigas deste doc (`assets/`, `data/` na raiz, `prompts/`) **não existem mais**. Tudo vive em `website/`.
+Pastas antigas (`assets/`, `data/` na raiz, `public/products/`, `public/stickers/`) **não existem**. Tudo do app vive em `website/`.
 
 ---
 
@@ -72,8 +75,8 @@ Pastas mencionadas em versões antigas deste doc (`assets/`, `data/` na raiz, `p
 
 1. **Cardápio** — escolher produtos com +/−; barra de categorias é atalho de scroll (sem destaque de categoria ativa).
 2. **Carrinho flutuante** — toque abre o painel "Conferir pedido".
-3. **Conferir pedido** — editar quantidades, remover itens; **Limpar Pedido** só aparece com itens no carrinho
-4. **Mostrar ao Caixa** — recibo com preço unitário, subtotais e total; botões "Corrigir pedido" e "Fechar".
+3. **Conferir pedido** — editar quantidades, remover itens; **Limpar Pedido** só aparece com itens no carrinho.
+4. **Mostrar ao Caixa** — recibo com preço unitário e total; botões "Corrigir pedido" e "Fechar".
 5. **Pedido Finalizado** — confirma pagamento, limpa o pedido, exibe "Pedido concluído!".
 
 Textos e passos vêm de `website/data/menu.json` → `evento`.
@@ -98,16 +101,26 @@ Depois do cardápio vem a seção **Como pedir** (`EventInfo`).
 
 Arquivo: `website/data/menu.json`
 
-- `evento` — nome, local, subtítulo, mensagens, data, horário, passos, observação
-- `categorias[]` — id, nome, ícone emoji, itens (id, nome, preco, imagem, descricao opcional)
+- `evento` — nome, subtítulo, mensagens, data, horário, passos, observação
+- `categorias[]` — id, nome, ícone emoji, itens (id, nome, preco, descricao opcional)
 
-Imagens em `website/public/products/<categoria>/<arquivo>.png`.
+Os itens são **só texto** na interface — não há campo `imagem` nem miniaturas de produto.
+
+---
+
+## Assets públicos
+
+| Caminho | Uso |
+|---------|-----|
+| `public/backgrounds/junina-background.png` | Fundo da página (camada fixa no CSS) |
+| `app/icon.svg`, `app/apple-icon.svg` | Favicons (convenção Next.js) |
+| `app/opengraph-image.tsx` | Imagem de compartilhamento (gerada) |
 
 ---
 
 ## Conceito visual
 
-Festa junina artesanal: scrapbook, papel kraft, bordas tracejadas, placa de madeira nas categorias.
+Festa junina artesanal: scrapbook, papel kraft, bordas tracejadas (com moderação no painel do pedido), placa de madeira nas categorias, bandeirinhas em CSS no cabeçalho.
 
 Detalhes em `design/design-system.md` e `design/identidade.md`.
 
@@ -120,3 +133,4 @@ Detalhes em `design/design-system.md` e `design/identidade.md`.
 - Preferir editar `menu.json` para textos do evento e produtos.
 - Tokens de cor e classes utilitárias em `website/app/globals.css`.
 - Componentes reutilizáveis; lógica de pedido em `lib/order.ts` e `context/OrderProvider.tsx`.
+- **Atualizar a documentação** (`README.md`, `website/README.md`, `AI_CONTEXT.md`, `docs/`, `design/`) quando mudar fluxo, dados ou visual.

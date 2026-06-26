@@ -1,6 +1,6 @@
-# Festa Junina na Oikos — Cardápio Digital
+# Festa Junina da Oikos — Cardápio Digital
 
-Cardápio digital para a **Festa Junina na Oikos**: uma página pensada para o celular, onde o visitante monta o pedido, confere no carrinho e mostra a tela ao caixa para pagar na hora.
+Cardápio digital para a **Festa Junina da Oikos**: uma página pensada para o celular, onde o visitante monta o pedido, confere no carrinho e mostra a tela ao caixa para pagar na hora.
 
 Sem cadastro. Sem pagamento online. Sem complicação.
 
@@ -47,10 +47,10 @@ O pedido fica salvo no **localStorage** do navegador — se a página recarregar
 
 - Página única responsiva (celular, tablet e desktop)
 - Cardápio com **5 categorias**: Salgados, Lanches, Bebidas, Doces e Bolos
-- Ilustrações estilo sticker para cada produto
-- Identidade visual de festa junina artesanal (papel kraft, bordas tracejadas, placa de madeira nas categorias)
+- Lista de produtos **só texto** (sem miniaturas)
+- Identidade visual de festa junina artesanal (papel kraft, bordas tracejadas, placa de madeira, bandeirinhas em CSS)
 - Painel de conferência com edição de quantidades
-- Tela de recibo para o caixa com subtotais e preço unitário
+- Tela de recibo para o caixa com preço unitário e total
 - Textos e passos configuráveis em um único arquivo JSON
 - Site estático, pronto para deploy (Vercel, Netlify, etc.)
 
@@ -82,7 +82,8 @@ context/          → estado global do pedido
 data/             → menu.json (cardápio e textos do evento)
 hooks/            → useOrder
 lib/              → lógica de pedido, moeda, persistência
-public/           → imagens (produtos, stickers, fundo)
+public/
+  backgrounds/    → fundo xadrez
 types/            → tipos TypeScript
 ```
 
@@ -140,8 +141,7 @@ Tudo que aparece na tela do evento está em **`data/menu.json`**:
 ```json
 {
   "evento": {
-    "nome": "Festa Junina",
-    "local": "na Oikos",
+    "nome": "Festa Junina da Oikos",
     "subtitulo": "Cardápio Oficial",
     "mensagens": ["...", "..."],
     "data": "27 de Junho",
@@ -153,14 +153,13 @@ Tudo que aparece na tela do evento está em **`data/menu.json`**:
     {
       "id": "salgados",
       "nome": "Salgados",
-      "icone": "🌭",
+      "icone": "🍽️",
       "itens": [
         {
           "id": "pastel",
           "nome": "Pastel",
           "preco": 10,
-          "descricao": "Carne ou Queijo",
-          "imagem": "/products/salgados/pastel.png"
+          "descricao": "Carne ou Queijo"
         }
       ]
     }
@@ -168,9 +167,8 @@ Tudo que aparece na tela do evento está em **`data/menu.json`**:
 }
 ```
 
-**Imagens de produtos:** coloque PNGs em `public/products/<categoria>/` e referencie o caminho em `imagem`.
-
-**Ordem das categorias no cardápio:** definida em `lib/menu.ts` (Salgados → Lanches → Bebidas → Doces → Bolos).
+- **`descricao`** (opcional) — variantes ou sabores (ex.: "Coca, Coca Zero")
+- **Ordem das categorias:** definida em `lib/menu.ts` (Salgados → Lanches → Bebidas → Doces → Bolos)
 
 ---
 
@@ -182,9 +180,9 @@ Tudo que aparece na tela do evento está em **`data/menu.json`**:
 | **Fontes** | Bree Serif (títulos) + Nunito (texto) |
 | **Cores** | Laranja `#D96A1D`, vermelho `#B03A2E`, amarelo `#F5C242`, verde `#4E8C4A`, creme `#F7E7C6`, kraft `#8B5E3C` |
 | **Fundo** | Tecido xadrez (`public/backgrounds/junina-background.png`) |
-| **Produtos** | Stickers PNG com fundo transparente |
+| **Cabeçalho** | Bandeirinhas em CSS |
 
-Tokens e classes visuais em `app/globals.css`.
+Tokens e classes visuais em `app/globals.css`. Detalhes em `../design/`.
 
 ---
 
@@ -195,6 +193,7 @@ Tokens e classes visuais em `app/globals.css`.
 - Backend ou API
 - Banco de dados
 - Painel administrativo
+- Imagens de produto na lista
 
 O caixa recebe o pagamento presencialmente; o app só organiza e exibe o pedido.
 
@@ -202,4 +201,4 @@ O caixa recebe o pagamento presencialmente; o app só organiza e exibe o pedido.
 
 ## Licença
 
-Projeto privado da Festa Junina na Oikos. Uso conforme definido pelos organizadores do evento.
+Projeto privado da Festa Junina da Oikos. Uso conforme definido pelos organizadores do evento.

@@ -1,4 +1,4 @@
-# Wireframe — Cardápio Festa Junina na Oikos
+# Wireframe — Cardápio Festa Junina da Oikos
 
 Especificação de telas e fluxo. Textos exatos do evento vêm de `website/data/menu.json`.
 
@@ -24,29 +24,30 @@ Ordem das categorias: **Salgados → Lanches → Bebidas → Doces → Bolos**.
 
 ## Cabeçalho
 
-**Elementos decorativos:** bandeirinhas no topo (`public/stickers/`).
+**Elementos decorativos:** faixa de bandeirinhas em CSS (`.header-bunting`) no topo do cartão.
 
 **Conteúdo (de `menu.json` → `evento`):**
 
-- Título em uma linha: `nome` + `local` (ex.: "Festa Junina na Oikos")
+- Título: `nome` (ex.: "Festa Junina da Oikos")
 - `subtitulo`, data e horário na sequência
-- `mensagens[]` — duas frases curtas, sem caixa extra
+- `mensagens[]` — duas frases curtas
 
 ---
 
 ## Navegação de categorias
 
-Barra sticky com 5 atalhos (ícone + rótulo).
+Barra sticky com 5 atalhos (ícone + rótulo), compacta em uma fileira no celular.
 
 - Toque leva à seção da categoria (scroll suave)
 - Sem indicador de "categoria ativa" ao rolar
-- Dica: "Toque na categoria ou role a tela." (10px, uma linha)
+- Dica: "Toque na categoria ou role a tela."
+- Fundo opaco ao rolar para não misturar com o xadrez do fundo
 
 ---
 
 ## Cards de produto
 
-Por item (lista só texto):
+Por item (lista só texto, sem imagem):
 
 - Nome e preço na mesma linha
 - Descrição opcional (variantes, sabores)
@@ -85,10 +86,10 @@ Abre por cima do cardápio (slide de baixo).
 
 **Corpo:**
 
-- Itens agrupados por categoria
-- Cada linha: quantidade × nome, subtotal da linha
-- Edição: +/− e botão **Remover**
-- Total de itens e total do pedido
+- Texto de ajuda (sem caixa pontilhada — só fundo suave)
+- Itens agrupados por categoria (caixa tracejada por seção)
+- Cada linha: quantidade × nome, subtotal; +/− e **Remover** (sem borda extra na linha)
+- Total de itens e total do pedido (caixa tracejada)
 
 **Rodapé:**
 
@@ -109,7 +110,7 @@ Tela cheia para o caixa ler no celular do cliente.
 **Recibo:**
 
 - Título: **PEDIDO**
-- Por categoria: ícone, nome, contagem de unidades
+- Por categoria: ícone e nome; lista de itens
 - Linhas com quantidade, nome, preço unitário ("R$ X cada") e subtotal da linha
 - Total de itens e **Total a pagar** em destaque
 

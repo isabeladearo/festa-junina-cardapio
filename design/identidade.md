@@ -1,6 +1,6 @@
 # Identidade visual
 
-**Evento:** Festa Junina na Oikos
+**Evento:** Festa Junina da Oikos
 
 ## Tema
 
@@ -8,10 +8,10 @@ Festa junina artesanal — scrapbook, papel recortado, quermesse de igreja, inte
 
 ## Elementos
 
-- Bandeirinhas, balão, casal caipira, fogueira (stickers no cabeçalho)
+- Bandeirinhas coloridas no cabeçalho (CSS, cores da paleta)
 - Tecido xadrez e papel kraft (fundo e cartões)
-- Bordas tracejadas estilo scrapbook
-- Placas de madeira nas categorias
+- Bordas tracejadas estilo scrapbook (com moderação nas telas de pedido)
+- Placas de madeira nas categorias do cardápio
 
 ## Paleta
 

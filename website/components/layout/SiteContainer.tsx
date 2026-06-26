@@ -1,19 +1,14 @@
-import type { ElementType, ReactNode } from "react";
+import type { ReactNode } from "react";
 
 interface SiteContainerProps {
   children: ReactNode;
   className?: string;
-  as?: ElementType;
 }
 
-export function SiteContainer({
-  children,
-  className = "",
-  as: Tag = "div",
-}: SiteContainerProps) {
+export function SiteContainer({ children, className = "" }: SiteContainerProps) {
   return (
-    <Tag className={`site-container${className ? ` ${className}` : ""}`}>
+    <div className={`site-container${className ? ` ${className}` : ""}`}>
       {children}
-    </Tag>
+    </div>
   );
 }

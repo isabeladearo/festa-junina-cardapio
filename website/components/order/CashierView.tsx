@@ -152,7 +152,7 @@ export function CashierView() {
               Pedido
             </h1>
 
-            <div className="cashier-receipt-items mt-5 space-y-5 sm:space-y-6">
+            <div className="mt-5 space-y-5 sm:space-y-6">
               {summary.categories.map((category) => {
                 const categoryMeta = menu.categorias.find(
                   (entry) => entry.id === category.categoryId,

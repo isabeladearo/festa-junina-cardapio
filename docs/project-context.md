@@ -1,6 +1,6 @@
 # Contexto do projeto
 
-Cardápio digital estático da **Festa Junina na Oikos** — uma página Next.js para o visitante montar o pedido no celular e mostrar ao caixa.
+Cardápio digital estático da **Festa Junina da Oikos** — uma página Next.js para o visitante montar o pedido no celular e mostrar ao caixa.
 
 ## Documentação
 
@@ -13,11 +13,13 @@ Cardápio digital estático da **Festa Junina na Oikos** — uma página Next.js
 | [design/design-system.md](../design/design-system.md) | Paleta, tipografia, componentes visuais e tokens CSS |
 | [design/identidade.md](../design/identidade.md) | Resumo da identidade visual |
 
+Mantenha estes arquivos alinhados ao código quando houver mudanças no app.
+
 ## Fonte de verdade do app
 
 - **Cardápio e textos do evento:** `website/data/menu.json`
 - **Código da aplicação:** pasta `website/`
-- **Assets (imagens):** `website/public/` (`products/`, `stickers/`, `backgrounds/`)
+- **Asset de fundo:** `website/public/backgrounds/junina-background.png`
 
 ## Comandos
 

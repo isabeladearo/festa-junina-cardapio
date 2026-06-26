@@ -1,6 +1,6 @@
-# Festa Junina na Oikos — Cardápio Digital
+# Festa Junina da Oikos — Cardápio Digital
 
-Repositório do cardápio digital da **Festa Junina na Oikos**: página web para o visitante montar o pedido no celular e mostrar ao caixa.
+Repositório do cardápio digital da **Festa Junina da Oikos**: página web para o visitante montar o pedido no celular e mostrar ao caixa.
 
 ## Comece aqui
 
@@ -23,7 +23,7 @@ festa-junina-cardapio/
 ├── docs/
 │   └── project-context.md ← índice da documentação
 ├── design/                ← wireframe, design system, identidade
-└── website/               ← app Next.js (código + cardápio + imagens)
+└── website/               ← app Next.js (código + cardápio + fundo)
 ```
 
 ## Documentação de design
@@ -37,4 +37,4 @@ festa-junina-cardapio/
 ## Fonte de verdade
 
 - **Cardápio e textos:** `website/data/menu.json`
-- **Imagens:** `website/public/` (`products/`, `stickers/`, `backgrounds/`)
+- **Fundo da página:** `website/public/backgrounds/junina-background.png`

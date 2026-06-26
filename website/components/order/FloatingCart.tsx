@@ -33,7 +33,7 @@ export function FloatingCart() {
   if (viewMode === "panel" || viewMode === "cashier") return null;
 
   return (
-    <div className="floating-cart fixed inset-x-0 bottom-0 z-50 pb-3 sm:pb-4">
+    <div className="fixed inset-x-0 bottom-0 z-50 pb-3 sm:pb-4">
       <SiteContainer>
         <button
           type="button"
