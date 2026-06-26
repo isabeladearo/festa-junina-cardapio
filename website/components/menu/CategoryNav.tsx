@@ -8,6 +8,7 @@ const NAV_LABELS: Record<string, string> = {
   bebidas: "Bebidas",
   doces: "Doces",
   bolos: "Bolos",
+  atracoes: "Jogos",
 };
 
 function getSectionId(categoryId: string) {
@@ -25,7 +26,12 @@ export function CategoryNav({ categories, onSelect }: CategoryNavProps) {
       <p className="category-nav-hint">
         Toque na categoria ou role a tela.
       </p>
-      <div className="category-nav-track">
+      <div
+        className={`category-nav-track${categories.length >= 6 ? " category-nav-track--compact" : ""}`}
+        style={{
+          gridTemplateColumns: `repeat(${categories.length}, minmax(0, 1fr))`,
+        }}
+      >
         {categories.map((category) => (
           <button
             key={category.id}

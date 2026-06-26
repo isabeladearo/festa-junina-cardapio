@@ -8,6 +8,7 @@ const CATEGORY_ORDER = [
   "bebidas",
   "doces",
   "bolos",
+  "atracoes",
 ] as const;
 
 function sortCategories(categorias: Category[]): Category[] {

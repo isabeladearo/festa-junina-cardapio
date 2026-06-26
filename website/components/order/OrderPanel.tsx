@@ -69,20 +69,20 @@ export function OrderPanel() {
           </SiteContainer>
         </div>
 
-        <div className="order-panel-body min-h-0 flex-1 overflow-y-auto overscroll-contain py-3 sm:py-4">
+        <div className="order-panel-body min-h-0 flex-1 overflow-y-auto overscroll-contain py-4 sm:py-5">
           <SiteContainer>
             <OrderSummary />
           </SiteContainer>
         </div>
 
-        <div className="order-panel-footer flex shrink-0 flex-col gap-2 py-3 sm:py-4">
-          <SiteContainer className="flex flex-col gap-2">
+        <div className="order-panel-footer flex shrink-0 flex-col gap-3 py-3 sm:gap-4 sm:py-4">
+          <SiteContainer className="flex flex-col gap-3 sm:gap-4">
             <p className="order-panel-footer-hint text-center text-sm font-semibold text-junina-kraft sm:text-base">
               {summary.isEmpty
                 ? "Volte ao cardápio para escolher os produtos."
                 : "Pronto para pagar? Toque em Mostrar ao Caixa."}
             </p>
-            <div className="flex flex-col gap-2 sm:flex-row">
+            <div className="flex flex-col gap-3 sm:flex-row">
               {!summary.isEmpty ? (
                 <button
                   type="button"

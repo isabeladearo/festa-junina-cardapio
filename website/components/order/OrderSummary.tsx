@@ -21,15 +21,14 @@ export function OrderSummary() {
   }
 
   return (
-    <div className="space-y-4 sm:space-y-5">
+    <div className="order-summary flex flex-col gap-6 sm:gap-7">
       <p className="order-panel-lead">
         Use <strong className="font-bold">+</strong> e{" "}
         <strong className="font-bold">−</strong> para mudar a quantidade. Toque
         em <strong className="font-bold">Remover</strong> para tirar um item.
       </p>
 
-      <div className="space-y-4 sm:space-y-5">
-        {summary.categories.map((category) => {
+      {summary.categories.map((category) => {
           const categoryMeta = menu.categorias.find(
             (entry) => entry.id === category.categoryId,
           );
@@ -43,7 +42,7 @@ export function OrderSummary() {
                 {categoryMeta?.icone} {category.categoryName}
               </h3>
 
-              <ul className="mt-2.5 space-y-2.5">
+              <ul className="mt-3 space-y-3 sm:mt-3.5 sm:space-y-3.5">
                 {category.items.map((line) => (
                   <li key={line.item.id}>
                     <OrderLineEditor
@@ -58,7 +57,6 @@ export function OrderSummary() {
             </section>
           );
         })}
-      </div>
 
       <div className="order-summary-totals">
         <p className="text-sm font-semibold text-junina-kraft sm:text-base">

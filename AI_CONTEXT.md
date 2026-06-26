@@ -102,9 +102,9 @@ Depois do cardápio vem a seção **Como pedir** (`EventInfo`).
 Arquivo: `website/data/menu.json`
 
 - `evento` — nome, subtítulo, mensagens, data, horário, passos, observação
-- `categorias[]` — id, nome, ícone emoji, itens (id, nome, preco, descricao opcional)
+- `categorias[]` — id, nome, ícone emoji, itens (id, nome, preco, descricao opcional). A última categoria costuma ser `atracoes` (Bingo, Cadeia, etc.)
 
-Os itens são **só texto** na interface — não há campo `imagem` nem miniaturas de produto.
+Os itens de comida são **só texto** na interface — não há campo `imagem` nem miniaturas de produto.
 
 ---
 

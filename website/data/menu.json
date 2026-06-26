@@ -85,13 +85,13 @@
             "itens": [
                 {
                     "id": "refrigerante",
-                    "nome": "Refrigerante (copo 500ml)",
+                    "nome": "Refrigerante (500ml)",
                     "preco": 7,
-                    "descricao": "Coca, Coca Zero"
+                    "descricao": "Coca-Cola, Coca-Cola Zero"
                 },
                 {
                     "id": "suco",
-                    "nome": "Suco (copo 500ml)",
+                    "nome": "Suco (500ml)",
                     "preco": 7,
                     "descricao": "Laranja"
                 },
@@ -102,7 +102,7 @@
                 },
                 {
                     "id": "chocolate-quente",
-                    "nome": "Chocolate Quente (copo 200ml)",
+                    "nome": "Chocolate Quente (200ml)",
                     "preco": 6
                 }
             ]
@@ -193,6 +193,29 @@
                     "id": "bolo-fuba-goiabada",
                     "nome": "Bolo de Fubá com Goiabada (fatia)",
                     "preco": 4
+                }
+            ]
+        },
+        {
+            "id": "atracoes",
+            "nome": "Brincadeiras e Atrações",
+            "icone": "🎉",
+            "itens": [
+                {
+                    "id": "bingo-1-cartela",
+                    "nome": "Bingo — 1 cartela",
+                    "preco": 4
+                },
+                {
+                    "id": "bingo-3-cartelas",
+                    "nome": "Bingo — 3 cartelas",
+                    "preco": 10
+                },
+                {
+                    "id": "cadeia-10min",
+                    "nome": "Cadeia — 10 minutos",
+                    "preco": 5,
+                    "descricao": "Prenda alguém na brincadeira."
                 }
             ]
         }

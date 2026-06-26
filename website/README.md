@@ -46,7 +46,7 @@ O pedido fica salvo no **localStorage** do navegador — se a página recarregar
 ## O que foi feito
 
 - Página única responsiva (celular, tablet e desktop)
-- Cardápio com **5 categorias**: Salgados, Lanches, Bebidas, Doces e Bolos
+- Cardápio com **6 categorias**: Salgados, Lanches, Bebidas, Doces, Bolos e Brincadeiras
 - Lista de produtos **só texto** (sem miniaturas)
 - Identidade visual de festa junina artesanal (papel kraft, bordas tracejadas, placa de madeira, bandeirinhas em CSS)
 - Painel de conferência com edição de quantidades
@@ -168,7 +168,9 @@ Tudo que aparece na tela do evento está em **`data/menu.json`**:
 ```
 
 - **`descricao`** (opcional) — variantes ou sabores (ex.: "Coca, Coca Zero")
-- **Ordem das categorias:** definida em `lib/menu.ts` (Salgados → Lanches → Bebidas → Doces → Bolos)
+- **Ordem das categorias:** definida em `lib/menu.ts` (Salgados → Lanches → Bebidas → Doces → Bolos → Brincadeiras)
+
+**Brincadeiras** ficam na última categoria (`id`: `atracoes`), com itens no mesmo formato das comidas — ex.: `"Bingo — 1 cartela"`, `"Cadeia — 10 minutos"`.
 
 ---
 

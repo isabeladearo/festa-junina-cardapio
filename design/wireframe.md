@@ -14,11 +14,11 @@ Cardápio digital simples para todas as idades: escolher itens, conferir o pedid
 
 1. Cabeçalho (título, mensagens, data e horário)
 2. Navegação de categorias (barra fixa ao rolar)
-3. Cardápio por categoria
+3. Cardápio por categoria (comida e brincadeiras — tudo entra no pedido)
 4. Seção "Como pedir" (passos numerados)
 5. Carrinho flutuante (fixo no rodapé quando há itens)
 
-Ordem das categorias: **Salgados → Lanches → Bebidas → Doces → Bolos**.
+Ordem das categorias: **Salgados → Lanches → Bebidas → Doces → Bolos → Brincadeiras**.
 
 ---
 
@@ -36,7 +36,7 @@ Ordem das categorias: **Salgados → Lanches → Bebidas → Doces → Bolos**.
 
 ## Navegação de categorias
 
-Barra sticky com 5 atalhos (ícone + rótulo), compacta em uma fileira no celular.
+Barra sticky com 6 atalhos (ícone + rótulo), compacta em uma fileira no celular.
 
 - Toque leva à seção da categoria (scroll suave)
 - Sem indicador de "categoria ativa" ao rolar
@@ -59,6 +59,8 @@ Layout responsivo:
 - Desktop: 2 colunas de linhas
 
 Quantidade nunca fica negativa.
+
+**Brincadeiras** (última categoria): Bingo e Cadeia como itens normais — ex.: "Bingo — 1 cartela", "Bingo — 3 cartelas", "Cadeia — 10 minutos". Mesmo layout e +/− das comidas.
 
 ---
 
@@ -89,7 +91,7 @@ Abre por cima do cardápio (slide de baixo).
 - Texto de ajuda (sem caixa pontilhada — só fundo suave)
 - Itens agrupados por categoria (caixa tracejada por seção)
 - Cada linha: quantidade × nome, subtotal; +/− e **Remover** (sem borda extra na linha)
-- Total de itens e total do pedido (caixa tracejada)
+- Total de itens e total do pedido (caixa tracejada) — inclui brincadeiras, se houver
 
 **Rodapé:**
 
