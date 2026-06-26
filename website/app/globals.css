@@ -37,12 +37,30 @@
   --font-heading: var(--font-bree-serif);
 }
 
-body {
+html {
+  min-height: 100%;
+  background-color: var(--background);
+}
+
+/* Fundo só na viewport (cover no documento inteiro estica demais e fica borrado). */
+html::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
   background-color: var(--background);
   background-image: url("/backgrounds/junina-background.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  pointer-events: none;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+
+body {
+  min-height: 100%;
+  background: transparent;
   color: var(--foreground);
   font-family: var(--font-nunito), "Nunito", sans-serif;
 }

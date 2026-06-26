@@ -57,9 +57,9 @@ export default function RootLayout({
   return (
     <html
       lang="pt-BR"
-      className={`${breeSerif.variable} ${nunito.variable} h-full antialiased`}
+      className={`${breeSerif.variable} ${nunito.variable} min-h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col font-sans">{children}</body>
+      <body className="flex min-h-full flex-col font-sans">{children}</body>
     </html>
   );
 }

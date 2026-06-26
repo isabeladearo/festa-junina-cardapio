@@ -40,7 +40,7 @@ Não deve parecer: app bancário, marketplace, iFood ou sistema corporativo.
 
 ## Fundo da página
 
-Imagem: `/backgrounds/junina-background.png` (xadrez junino), rola com a página (sem `fixed`, evita blur no celular).
+Imagem: `/backgrounds/junina-background.png` em `html::before` com `position: fixed` e `cover` só na viewport — nítido no celular, sem `background-attachment: fixed` nem esticar o fundo na altura do documento.
 
 ---
 
