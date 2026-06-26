@@ -1,8 +1,8 @@
 export const siteConfig = {
-  name: "Festa Junina na Oikos",
-  title: "Festa Junina na Oikos",
+  name: "Festa Junina da Oikos",
+  title: "Festa Junina da Oikos",
   description:
-    "Cardápio digital da Festa Junina na Oikos. Monte seu pedido no celular, confira e mostre ao caixa para pagar na hora.",
+    "Cardápio digital da Festa Junina da Oikos. Monte seu pedido no celular, confira e mostre ao caixa para pagar na hora.",
   locale: "pt_BR",
   eventDate: "27 de Junho",
   eventTime: "19h",

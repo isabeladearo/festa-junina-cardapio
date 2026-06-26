@@ -776,13 +776,6 @@ h6 {
   padding-bottom: 0.25rem;
 }
 
-.cashier-category-meta {
-  margin: 0.25rem 0 0;
-  font-size: 0.9375rem;
-  font-weight: 600;
-  color: rgb(139 94 60 / 0.75);
-}
-
 .cashier-line-item {
   padding: 0.75rem 0.875rem;
   border: var(--junina-dash-kraft-soft);

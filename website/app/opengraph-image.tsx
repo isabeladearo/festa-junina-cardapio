@@ -75,7 +75,7 @@ export default function OpenGraphImage() {
             textTransform: "uppercase",
           }}
         >
-          Festa Junina na Oikos
+          Festa Junina da Oikos
         </div>
         <div
           style={{

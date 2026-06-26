@@ -157,10 +157,6 @@ export function CashierView() {
                 const categoryMeta = menu.categorias.find(
                   (entry) => entry.id === category.categoryId,
                 );
-                const categoryItemCount = category.items.reduce(
-                  (sum, line) => sum + line.quantity,
-                  0,
-                );
 
                 return (
                   <section
@@ -170,10 +166,6 @@ export function CashierView() {
                     <h2 className="font-heading text-xl text-junina-laranja sm:text-2xl">
                       {categoryMeta?.icone} {category.categoryName}
                     </h2>
-                    <p className="cashier-category-meta">
-                      {categoryItemCount}{" "}
-                      {categoryItemCount === 1 ? "unidade" : "unidades"}
-                    </p>
                     <ul className="mt-2.5 space-y-2.5">
                       {category.items.map((line) => (
                         <li key={line.item.id}>
