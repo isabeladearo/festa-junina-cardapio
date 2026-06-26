@@ -310,8 +310,20 @@ h6 {
   z-index: 40;
   margin-inline: calc(-1 * var(--site-gutter, 1rem));
   padding-inline: var(--site-gutter, 1rem);
-  padding-block: 0.25rem;
-  background: rgb(252 246 234);
+  padding-block: 0.375rem 0.625rem;
+  isolation: isolate;
+  transform: translateZ(0);
+  background-color: var(--junina-paper-light);
+}
+
+.category-nav-sticky::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background-color: var(--junina-paper-light);
+  border-bottom: 1px solid rgb(139 94 60 / 0.14);
+  box-shadow: 0 6px 14px rgb(139 94 60 / 0.14);
 }
 
 .category-section-anchor {
