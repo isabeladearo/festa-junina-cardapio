@@ -108,6 +108,12 @@
                     "imagem": "/products/bebidas/suco.png"
                 },
                 {
+                    "id": "agua-com-gas",
+                    "nome": "Água com Gás (500ml)",
+                    "preco": 5,
+                    "imagem": "/products/bebidas/agua-com-gas.png"
+                },
+                {
                     "id": "chocolate-quente",
                     "nome": "Chocolate Quente (copo 200ml)",
                     "preco": 6,
