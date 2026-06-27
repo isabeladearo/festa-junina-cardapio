@@ -73,7 +73,7 @@ Pastas antigas (`assets/`, `data/` na raiz, `public/products/`, `public/stickers
 
 ## Fluxo do usuário (implementado)
 
-1. **Cardápio** — escolher produtos com +/−; barra de categorias é atalho de scroll (sem destaque de categoria ativa).
+1. **Cardápio** — escolher produtos com +/−; rolar pelas seções marcadas com placa de madeira (sem barra de atalhos no topo).
 2. **Carrinho flutuante** — toque abre o painel "Conferir pedido".
 3. **Conferir pedido** — editar quantidades, remover itens; **Limpar Pedido** só aparece com itens no carrinho.
 4. **Mostrar ao Caixa** — recibo com preço unitário e total; botões "Corrigir pedido" e "Fechar".
@@ -92,6 +92,7 @@ Definida em `website/lib/menu.ts`:
 3. Bebidas
 4. Doces
 5. Bolos
+6. Brincadeiras e Atrações (`id`: `atracoes`)
 
 Depois do cardápio vem a seção **Como pedir** (`EventInfo`).
 

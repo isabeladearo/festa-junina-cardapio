@@ -116,7 +116,7 @@ Leves e rápidas:
 
 - Painel do pedido: slide de baixo
 - Botões: leve `scale` no toque
-- Respeitar `prefers-reduced-motion` no scroll de categorias
+- Respeitar `prefers-reduced-motion` nas animações de interface
 
 ---
 

@@ -33,7 +33,7 @@ flowchart LR
 
 | Etapa | O que o visitante faz |
 |-------|------------------------|
-| **Cardápio** | Navega por categorias, usa **+** e **−** nos produtos |
+| **Cardápio** | Rola pelas seções (placas de categoria), usa **+** e **−** nos produtos |
 | **Carrinho** | Barra fixa no rodapé com total de itens e valor |
 | **Conferir pedido** | Revisa, edita ou remove itens; **Limpar Pedido** só aparece com itens |
 | **Mostrar ao Caixa** | Recibo em fonte grande para o caixa ler |

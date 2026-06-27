@@ -13,7 +13,7 @@ Cardápio digital simples para todas as idades: escolher itens, conferir o pedid
 ## Estrutura da página (scroll vertical)
 
 1. Cabeçalho (título, mensagens, data e horário)
-2. Cardápio por categoria (comida e brincadeiras — tudo entra no pedido)
+2. Cardápio por categoria (comida e brincadeiras — tudo entra no pedido). Cada seção tem placa de madeira com ícone e nome; **sem barra de atalhos** no topo.
 3. Seção "Como pedir" (passos numerados)
 4. Carrinho flutuante (fixo no rodapé quando há itens)
 
