@@ -13,10 +13,9 @@ Cardápio digital simples para todas as idades: escolher itens, conferir o pedid
 ## Estrutura da página (scroll vertical)
 
 1. Cabeçalho (título, mensagens, data e horário)
-2. Navegação de categorias (barra fixa ao rolar)
-3. Cardápio por categoria (comida e brincadeiras — tudo entra no pedido)
-4. Seção "Como pedir" (passos numerados)
-5. Carrinho flutuante (fixo no rodapé quando há itens)
+2. Cardápio por categoria (comida e brincadeiras — tudo entra no pedido)
+3. Seção "Como pedir" (passos numerados)
+4. Carrinho flutuante (fixo no rodapé quando há itens)
 
 Ordem das categorias: **Salgados → Lanches → Bebidas → Doces → Bolos → Brincadeiras**.
 
@@ -31,17 +30,6 @@ Ordem das categorias: **Salgados → Lanches → Bebidas → Doces → Bolos →
 - Título: `nome` (ex.: "Festa Junina da Oikos")
 - `subtitulo`, data e horário na sequência
 - `mensagens[]` — duas frases curtas
-
----
-
-## Navegação de categorias
-
-Barra sticky com 6 atalhos (ícone + rótulo), compacta em uma fileira no celular.
-
-- Toque leva à seção da categoria (scroll suave)
-- Sem indicador de "categoria ativa" ao rolar
-- Dica: "Toque na categoria ou role a tela."
-- Fundo opaco ao rolar para não misturar com o xadrez do fundo
 
 ---
 

@@ -56,7 +56,7 @@ festa-junina-cardapio/
     ├── app/               layout, page, globals.css, ícones, opengraph
     ├── components/
     │   ├── layout/        Header, EventInfo, SiteContainer
-    │   ├── menu/          MenuCatalog, CategoryNav, CategorySection, ProductCard, ProductGrid
+    │   ├── menu/          MenuCatalog, CategorySection, ProductCard, ProductGrid
     │   └── order/         FloatingCart, OrderPanel, OrderSummary, OrderLineEditor, CashierView, QuantitySelector
     ├── context/           OrderProvider
     ├── data/              menu.json

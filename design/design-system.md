@@ -69,11 +69,7 @@ Cartão estilo papel kraft — header, produtos, seção "Como pedir".
 
 ### `.category-plaque`
 
-Placa de madeira para o título de cada categoria (texto branco, sombra).
-
-### `.category-nav`
-
-Barra sticky com 5 atalhos compactos (grade no celular), borda tracejada e fundo papel claro. Fundo opaco ao rolar (`category-nav-sticky`).
+Placa de madeira para o título de cada categoria (texto branco, sombra). É o único marcador de seção — sem barra de atalhos no topo.
 
 ### Botões de quantidade (`.qty-btn`)
 
